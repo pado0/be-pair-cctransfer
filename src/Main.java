@@ -32,7 +32,6 @@ public class Main {
         System.out.println("========================================");
         System.out.println("[알림] 자막 순화 프로그램 결과입니다.");
 
-        StringBuilder stringBuilder = new StringBuilder();
 
         // 비속어 후보 단어 하나하나 순회
         for(int i=0 ; i<bad_words.length ; i++){
@@ -42,6 +41,7 @@ public class Main {
 
         System.out.println(">>> " + cc);
         System.out.println("[안내] 프로그램을 종료합니다.");
+        scanner.close();                  // [pair] : Scanner 클로즈 추가
 
     }
 }
